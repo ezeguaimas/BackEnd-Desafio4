@@ -108,5 +108,38 @@
     "category": "categoria producto 10",
     "thumbnails": [],
     "id": "ea2a9480-860f-4e3e-b50c-f3f0ef83f0d8"
+  },
+  {
+    "title": "producto 11",
+    "description": "descripcion de producto 11",
+    "code": "abc111",
+    "price": 600,
+    "status": true,
+    "stock": 19,
+    "category": "categoria producto 11",
+    "thumbnails": [],
+    "id": "fc950a5a-e983-4029-a1d3-1fc01ce0c87e"
+  },
+  {
+    "title": "producto 12",
+    "description": "descripcion de producto 12",
+    "code": "abc222",
+    "price": 200,
+    "status": true,
+    "stock": 12,
+    "category": "categoria producto 12",
+    "thumbnails": [],
+    "id": "fb2f098b-8a7e-4164-9917-7ee9ca81e258"
+  },
+  {
+    "title": "producto 13",
+    "description": "descripcion de producto 13",
+    "code": "abc333",
+    "price": 233,
+    "status": true,
+    "stock": 13,
+    "category": "categoria producto 13",
+    "thumbnails": [],
+    "id": "f8fed7b5-ca9e-4c6c-8a78-51c9d8b66a8d"
   }
 ]
