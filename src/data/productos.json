@@ -141,5 +141,27 @@
     "category": "categoria producto 13",
     "thumbnails": [],
     "id": "f8fed7b5-ca9e-4c6c-8a78-51c9d8b66a8d"
+  },
+  {
+    "title": "producto 14",
+    "description": "descripcion de producto 14",
+    "code": "sdfs14",
+    "price": 144,
+    "status": true,
+    "stock": 14,
+    "category": "categoria producto 14",
+    "thumbnails": [],
+    "id": "3d0a70fd-2129-4778-9eb5-c47631bbabdc"
+  },
+  {
+    "title": "producto 15",
+    "description": "descripcion de producto 15",
+    "code": "sdfs15",
+    "price": 155,
+    "status": true,
+    "stock": 15,
+    "category": "categoria producto 15",
+    "thumbnails": [],
+    "id": "54fd18fe-d528-48c3-a96a-7be2e7546e41"
   }
 ]

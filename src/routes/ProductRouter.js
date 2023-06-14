@@ -1,5 +1,6 @@
 import express from "express";
 import ProductManager from "../managers/ProductManager.js";
+import { updatedProducts } from "../socketUtils.js";
 
 const router = express.Router();
 const productManager = new ProductManager();
@@ -39,8 +40,8 @@ router.post("/", async (req, res) => {
   try {
     const product = req.body;
     productManager.addProduct(product);
-
     res.status(201).json({ message: "Producto agregado exitosamente" });
+    updatedProducts();
   } catch (error) {
     res.status(500).json({ error: "Error al agregar el producto" });
   }
@@ -54,6 +55,7 @@ router.put("/:pid", async (req, res) => {
 
     if (result === "Error: Producto no encontrado") {
       res.status(404).json({ error: result });
+      updatedProducts();
     } else {
       res.status(200).json({ message: "Producto modificado exitosamente" });
     }
@@ -71,6 +73,7 @@ router.delete("/:pid", async (req, res) => {
       res.status(404).json({ error: result });
     } else {
       res.status(200).json({ message: "Producto eliminado exitosamente" });
+      updatedProducts();
     }
   } catch (error) {
     res.status(500).json({ error: "Error al eliminar el producto" });

@@ -13,7 +13,7 @@ const port = 8080;
 const httpServer = app.listen(port, () => {
   console.log(`Servidor iniciado en el puerto ${port}`);
 });
-const io = new Server(httpServer);
+export const io = new Server(httpServer);
 
 app.engine("handlebars", handlebars.engine());
 app.set("views", "views");
@@ -30,5 +30,5 @@ app.use("/api/carts", CartRouter);
 app.use("/", viewsRouter);
 
 httpServer.on("connection", (socket) => {
-  console.log("Nueva conexión updatedProducts");
+  console.log("Nueva conexión websocket");
 });
